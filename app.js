@@ -10,6 +10,15 @@ $('.allValues').children().remove();
  /*pull in the value the user enters*/
 var highestNumber = $('#number').val();
 
+createList(highestNumber);
+
+}
+}); /*close keydown*/
+
+});
+/*end of document ready*/
+
+function createList(highestNumber){
 /*loop through all the values*/
  for (i = 1; i <= highestNumber; i++)
  {
@@ -34,7 +43,3 @@ var highestNumber = $('#number').val();
  	$(".allValues").append("<li>" + addToList + "</li>");
  }/*close For loop*/
 }
-}); /*close keydown*/
-
-});
-/*end of document ready*/
